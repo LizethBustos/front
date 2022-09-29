@@ -1,30 +1,56 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
+  <div id="app" class="app">
+    <div class="header">
+      <h1>Tu Tienda</h1>
+    </div>
+
+    <div class="main-component">
+      <router-vie>
+
+      </router-vie>
+    </div>
+
+
+  </div>
+  
 </template>
+<script>
+export default {
+  name: 'App',
+  data: function() {
+
+  },
+  methods: {
+
+  },
+  crated: function() {
+
+  }
+}
+</script>
+
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto');
+  body {
+    margin:0;
+    font-family: 'Roboto', 'sans serif';
+  }
+  .header {
+    margin:0;
+    padding: 0;
+    width: 100%;
+    height: 10vh;
+    min-height: 100px;
+    background-color: #283747;
+    color: #E5E7E9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 
-nav {
-  padding: 30px;
-}
-
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-nav a.router-link-exact-active {
-  color: #42b983;
-}
+  .header h1{
+    width: 20%;
+    text-align: center;
+  }
 </style>
